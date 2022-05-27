@@ -30,8 +30,12 @@ body {
     bottom: 0;
     right: 0;
     left: 0;
-    /* background-image: url(design/mobile-design.jpg); */
+    background-image: url(design/desktop-design.jpg);
 }
+
+/********************************/
+/* RATING CARD SECTION - MOBILE */
+/********************************/
 
 .feedback {
     margin: auto;
@@ -107,9 +111,9 @@ body {
     cursor: pointer;
 }
 
-/****************************/
-/* THANK YOU MOBILE SECTION */
-/****************************/
+/******************************/
+/* THANK YOU SECTION - MOBILE */
+/******************************/
 
 .thanks {
     margin: auto;
@@ -155,5 +159,59 @@ body {
     line-height: 1.4;
 }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+/*********************************/
+/* RATING CARD SECTION - DESKTOP */
+/*********************************/
+
+@media screen and (min-width: 900px) {
+
+    .feedback {
+        width: 25.8rem;
+        border-radius: 30px;
+        padding-left: 32px;
+        padding-right: 41px;
+        padding-top: 30px;
+        /* padding-bottom: 32px; */
+    }
+
+    .feedback__icon {
+        padding: 1rem;
+        margin-bottom: 24px;
+    }
+
+    .feedback__title {
+        font-size: 1.74rem;
+    }
+
+    .feedback__request {
+        font-size: .95rem;
+    }
+
+    .feedback__button {
+        width: 50px;
+        height: 50px;
+    }
+
+    .feedback__value {
+        top: 28%;
+        left: 20px;
+    }
+
+    .feedback__submit-rating {
+        font-size: 1rem;
+    }
+
+}
+
+
+
+
+.attribution {
+     font-size: 11px; 
+     text-align: center; 
+     color: var(--white);
+}
+    
+    .attribution a {
+        color: hsl(228, 45%, 44%); 
+}
