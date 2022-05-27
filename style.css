@@ -30,7 +30,6 @@ body {
     bottom: 0;
     right: 0;
     left: 0;
-    background-image: url(design/desktop-thank-you-state.jpg);
 }
 
 /********************************/
@@ -85,7 +84,7 @@ body {
     position: absolute;
     top: 25%;
     left: 15px;
-    color: white;
+    color: var(--light-grey);
 }
 
 .feedback__button {
@@ -94,10 +93,23 @@ body {
     width: 40px;
     height: 40px;
     background-color:hsl(213, 21%, 22%);
+    cursor: pointer;
+}
+
+.feedback__button:hover {
+    background-color: var(--orange);
+}
+
+.feedback__button:hover + label {
+    color: var(--white);
 }
 
 .feedback__button:checked {
-    background-color: var(--orange);
+    background-color: var(--light-grey);
+}
+
+.feedback__button:checked + label {
+    color: var(--white);
 }
 
 .feedback__submit-rating {
@@ -109,6 +121,11 @@ body {
     border-radius: 22px;
     letter-spacing: 1.3px;
     cursor: pointer;
+}
+
+.feedback__submit-rating:hover {
+    background-color: var(--white);
+    color: var(--orange);
 }
 
 /******************************/
@@ -171,6 +188,7 @@ body {
         padding-left: 32px;
         padding-right: 41px;
         padding-top: 30px;
+        padding-bottom: 32px;
     }
 
     .feedback__icon {
@@ -233,12 +251,13 @@ body {
 
 }
 
-.attribution {
+.attribution-info {
      font-size: 11px; 
      text-align: center; 
      color: var(--white);
 }
     
-    .attribution a {
-        color: hsl(228, 45%, 44%); 
+.attribution a {
+    color: hsl(228, 45%, 44%); 
 }
+
