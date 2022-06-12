@@ -39,7 +39,7 @@ body {
     background-color: var(--dark-blue);
     width: 20.4375rem;
     border-radius: 10px;
-    padding: 1.5rem 1.625rem 2rem 1.5rem;
+    padding: 1.5rem 1.625rem 2.3rem 1.5rem;
 }
 
 .feedback__icon {
@@ -73,12 +73,13 @@ body {
 
 .feedback__rating-button {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .feedback__value {
     position: absolute;
-    top: 25%;
-    left: 0.9375rem;
     color: var(--light-grey);
 }
 
@@ -89,6 +90,7 @@ body {
     height: 2.5rem;
     background-color:hsl(213, 21%, 22%);
     cursor: pointer;
+    transition: all 250ms;
 }
 
 .feedback__button:hover {
@@ -114,8 +116,9 @@ body {
     border: none;
     padding: 0.875rem 0;
     border-radius: 22px;
-    letter-spacing: 1.3px;
+    letter-spacing: 2px;
     cursor: pointer;
+    transition: all 250ms;
 }
 
 .feedback__submit-rating:hover {
@@ -172,7 +175,7 @@ body {
     .feedback {
         width: 25.8rem;
         border-radius: 30px;
-        padding: 1.875rem 2.5625rem 2rem 2rem;
+        padding: 1.875rem 2.5625rem 2.5rem 2rem;
     }
 
     .feedback__icon {
@@ -193,11 +196,6 @@ body {
         height: 3.125rem;
     }
 
-    .feedback__value {
-        top: 28%;
-        left: 1.25rem;
-    }
-    
     .feedback__submit-rating {
         font-size: 1rem;
     }
@@ -245,15 +243,13 @@ body {
 }
     
 .attribution a {
-    box-shadow: inset 0 0 0 0 hsl(228, 45%, 44%);
-    color: hsl(228, 45%, 44%); 
+    box-shadow: inset 0 0 0 0 var(--orange);
+    color: var(--orange); 
     text-decoration: none;
-    margin: 0 -.25rem;
-    padding: 0 .25rem;
     transition: color .2s ease-in-out, box-shadow .2s ease-in-out;
 }
 
 .attribution a:hover {
-    box-shadow: inset 100px 0 0 0 hsl(228, 45%, 44%);
+    box-shadow: inset 100px 0 0 0 var(--orange);
     color: hsl(0, 0%, 100%);
 }
